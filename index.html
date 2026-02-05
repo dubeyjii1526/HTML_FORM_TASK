@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+        <link rel="icon" type="image/png" href="favicon1.png">
+
+    <style>
+        form{
+            border: 1px solid lightslategray;
+            background: linear-gradient(135deg,#667eea,#764ba2);
+           
+        }
+        fieldset{
+            border: 3px solid black;
+             /* outline: 1px solid black; */
+                font-family: Arial, Helvetica, sans-serif;
+            width: 600px;
+            height: 1800px;
+            text-align: center;
+            display: inline;
+            /* margin-top: 5%; */
+            margin-left: 35%;
+            background-color: rgb(225, 245, 252);
+        }
+        /* #fname, #lname{
+            width: 5vw;
+            height: 5vh;
+        } */
+  @media screen and (max-width: 1024px) {
+    fieldset {
+  
+        width: 90% ; 
+        
+        height: auto !important; 
+        
+        
+        margin-left: auto ;
+        margin-right: auto ;
+        
+        display: block !important;
+    }
+
+    input[type="text"], 
+    input[type="password"], 
+    input[type="email"], 
+    input[type="url"], 
+    input[type="tel"], 
+    input[type="search"], 
+    input[type="number"], 
+    input[type="submit"],
+    input[type="reset"],
+    select, 
+    textarea {
+        width: 90% ;
+        margin-bottom: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+    
+        
+    <form action="receiver.html" target="_blank" autocomplete="on" method="get" >
+<fieldset>
+<legend><H1>Form Tag</H1></legend>
+<label for="image"></label><br>
+<input type="image" src="favicon1.png" alt="Submit" width="48" height="48"><br><br><br>
+
+
+<label for="fname"> <strong>Enter Your FirstName:- </strong></label>
+<input type ="text" id="fname" placeholder="FirstName" autocomplete="on"><br><br>
+<label for="lname"> Enter Your lastName:-</label>
+<input type ="text" id="lname" placeholder="lastName" autocomplete="on"><br>
+<br>
+<label for="password">Enter Your password:-</label>
+<input type="password" placeholder="password" id="password">
+<br><br>
+<label for="email">Enter Your Email:-</label>
+<input type="email" id="email" placeholder="email" autocomplete="on"><br><br>
+
+
+<hr><strong>Gender:-</strong> <br><br>
+<input type="radio" id="Ga" name="Gender" value="Gender">
+
+<label for="male">Male</label>
+<input type="radio" name="Gender" id="male" >
+<label for="female">Female</label>
+<!-- <input type="radio" name="Gender"> -->
+<hr><strong>Select The Completed Topics:- </strong><br><br>
+ <input type="checkbox" id="vehicle1" name="Course1" value="Git">
+  <label for="Course1"> Git</label><br>
+  <input type="checkbox" id="course2" name="course2" value="Linux">
+ <label for="vehicle2"> linux</label><br>
+  <input type="checkbox" id="course3" name="course3" value="Bootstrap">
+<label for="vehicle3"> Html css and Bootstrap</label>
+
+<hr>
+<label for="department" ><strong>Deparment:-</strong></label><br>
+<select name="Department" id="department" size="4" multiple>
+    <option value="React">React</option>
+    <option value="Nodejs">Node</option>
+    <option value="PHP">PHP</option>
+</select><hr>
+<br>
+
+
+<label for="favcolor" ><strong>Select your favourite color</strong></label><br><br>
+<input type="color" name="favcolor" id="favcolor" value="#ff0000"><br><br><hr>
+<br>
+<label for="number"><strong>Rate Your Skills(between 1 to 5)</strong></label><br>
+<input type="number" id="number" value="Skills" min="1" max="5"><br><hr><br>
+<label for="date"><strong>Enter Your DOB:-</strong></label><br><br><br>
+<input type="date" id="date"><br><br><hr><br>
+ <label for="month"><strong>Input type Month</strong></label><br>
+ <input type="month" id="month" value="month"><br><hr>  
+<br>
+ <label for="week"><strong>Input type week:-</strong></label><br>
+<input type="week" id="weel" value="week"><br><hr>
+<label for="range"><strong>Describe Your Skills</strong></label><br>
+<input type="range" name="volume" id="range" min="40%" max="100%"><br><hr>
+<label for="search"><strong>Search Here</strong></label><br>
+<input type="search" name="search" id="search" title="It will not work as there is no javascript"><br><br><hr>
+<label for="tel">Provide Your Telephone number:-</label><br>
+<input type="tel" name="telephone" id="tel"><br>
+
+
+<br><hr>
+<br><br>
+Provide Your Resume:- <br>
+<input type="file">
+<br>
+<input type="hidden" value="9999999">
+<br>
+<hr><br>
+<label for="tp">Time</label><br>
+<input type="time" id="tp" value="Time"><br><hr>
+<label for="url">Enter Your Project link:-</label><br>
+
+<input type="url" id="url" value="url"><br><hr>
+
+<label for="textarea"><strong>Provide your Noticiable feedback</strong></rovide></label><br>
+<textarea name="feedback " id="textarea" placeholder="feedback" style="width: 10vw; height: 10vh;"></textarea><br>
+<hr>
+<input type="submit" style="background-color: rgb(162, 236, 162); width:8vw; height: 4vh;"><br><hr>
+<input type="reset" value="Reset" style="background-color: rgb(204, 92, 64); width:8vw; height: 4vh;"><br><hr>
+</fieldset>
+
+<!-- <svg width="250" height="250">
+    <circle cx="80" cy="80" r="78"stroke="green" stroke-width="4" fill="yellowgreen"></circle>
+<hr>
+</svg>
+<svg width="250" height="250">
+    <rect x="20" y="20" width="200" height="100"  stroke="red" stroke-width="4" fill="yellow"></rect>
+
+</svg> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+
+</body>
+</html>
